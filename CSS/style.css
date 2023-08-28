@@ -88,6 +88,26 @@ header{
     }
 }
 
+/*----------WHATSAPP----------*/
+
+.wtsLogo{
+    position:fixed;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    bottom: 30px;
+    right: 30px;
+    background: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.30);
+    z-index: 1000;
+}
+.wtsLogo:hover{
+    text-decoration: none;
+    color: #000000;
+}
 
 /*--------BANNER-------------*/
 
@@ -106,16 +126,20 @@ header{
 
 /*------------CARDS GALERIA------------*/
 
+
 div.gallery{
     /*border: 1px solid #ccc;*/
-    box-shadow: 10px 10px 5px rgb(124, 124, 124)
+    padding: 2rem;
+    box-shadow: 10px 10px 3px rgb(124, 124, 124)
 }
+
 div.gallery:hover{
     border: 1px solid #777;
 }
 div.gallery img{
     width: 100%;
     height: auto;
+    padding: 1rem;
 }
 div.desc{
     backdrop-filter: blur(5px);
@@ -141,14 +165,14 @@ div.desc{
   
 @media only screen and (max-width: 500px){
     .responsive{
-      width: 70%;
-  
+        width: 100%;
+        padding: 1rem;
     }
     .galerry{
       display: flex;
       justify-content: center;
       align-items: center;
-}
+    }
 }
   
 @media only screen and (max-width: 400px ){
@@ -287,4 +311,34 @@ footer {
     align-content: center;
     color: #0e0e0e;
     border: 1px solid black;
+}
+.blur-in-expand{ /*Animacion de expansion por blur global*/
+    animation:blur-in-expand 0.9s linear both
+}
+@keyframes blur-in-expand{
+    0%{transform:scale(0);
+        filter:blur(12px);
+        opacity:0
+    }100%
+    {transform:scale(1);
+        filter:blur(0);
+        opacity:1
+    }
+}
+
+.tracking-in-contract{ /*Animacion entrada de texto*/
+    animation:tracking-in-contract 1s linear both
+} 
+@keyframes tracking-in-contract{
+    0%{
+        letter-spacing:.6em;
+        opacity:0
+    }
+    40%{
+        opacity:.6
+    }
+    100%{
+        letter-spacing:normal;
+        opacity:1
+    }
 }
