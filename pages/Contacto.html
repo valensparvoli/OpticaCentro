@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optica centro</title>
+
+    <!--Link a boostrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+
+    <!---Link a CSS-->
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <!-- Link a font awesome -->
+    <script
+    src="https://kit.fontawesome.com/7675568d7c.js"
+    crossorigin="anonymous"
+    ></script>
+</head>
+<body class="backgroundGlasses">
+    <header>
+        <div class="header">
+            <img class="logo" src="../Assets/opticaLogo.png" alt="logo"><a href="../index.html"></a>
+            <button class="openNavBtn" id="open"><i class="fa-solid fa-bars fa-beat" style="color: #ffffff;"></i></button>
+            <nav class="nav" id="nav">
+                <button class="closeNavBtn" id="close"><i class="fa-solid fa-xmark fa-beat" style="color: #ffffff;"></i></button>
+                <ul class="navList">
+                    <div ><li><a href="#" class="btnSlideInside">Inicio</a></li></div>
+                    <li><a href="./pages/Contacto.html" class="btnSlideInside">Contacto</a></li>
+                    <li><a href="#" class="btnSlideInside">Quienes somos</a></li>
+                    <li><a href="#" class="btnSlideInside">Ubicacion</a></li>
+                    <li><a href="#" class="btnSlideInside">Productos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <main class="bodyContactos">
+        <form>
+            <div class="segment">
+                <h2>Contacto</h2>
+            </div>
+            Nombre: <input type="text" name="nombre">
+            <br><br>
+            Apellido: <input type="text" name="nombre">
+            <br><br>
+            Indique sexo: <br>
+            <div class="sexoCt">
+                Masculino <br>
+                <input type="radio" name="sexo">
+                Femenino <br>
+                <input type="radio" name="sexo">
+                Otro <br> 
+                <input type="radio" name="sexo">
+            </div>
+            Indique el motivo de su consulta: <br>
+            <input type="checkbox" name="disponibilidad"> Disponibilidad de productos <br>
+            <input type="checkbox" name="precio"> Precio de productos <br>
+            <input type="checkbox" name="compraPorMayor"> Compras al por mayor <br>
+            <input type="checkbox" name="Otro"> Otro <br>
+            En caso de que su respuesta sea otro, aclarar el motivo: <br>
+            <textarea name="explicacionOtro" cols="25" rows="7"></textarea>
+            <br>
+            Seleccione su provincia:
+            <select name="provincias" class="text">
+                <option value="BuenosAires"> Buenos aires</option>
+                <option value="SantaFe">Santa Fe</option>
+                <option value="Cordoba">Cordoba</option>
+                <option value="EntreRios">EntreRios</option>
+                <option value="SanLuis">San Luis</option>
+                <option value="LaPampa">La Pampa</option>
+            </select><br><br>
+            Caracteristica de su numero telefonico: <input type="text" name="caracteristicaTel">
+            <br><br>
+            Numero telofonico: <input type="text" name="numeroTelefonico"><br>
+            <input type="submit" name="enviar" class="text">
+            <input type="reset" name="cancelado" class="text"><br>
+        </form> 
+    </main>
+
+    <!--Link boostrap y jv-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../JS/mainScript.js"></script>
+</body>
+</html>

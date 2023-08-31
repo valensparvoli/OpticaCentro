@@ -45,6 +45,25 @@ header{
     display: none;
 }
 
+/*Animacion para slideInside*/
+
+.btnSlideInside{
+    color: #fff;
+    border: 2px solid #808080b3;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #646464;
+    -webkit-transition: ease-out 0.9s;
+    -moz-transition: ease-out 0.9s;
+    transition: ease-out 0.9s;
+}
+
+.btnSlideInside:hover{
+    box-shadow: inset 400px 50px 0 0 #808080b3;
+}
+
 @media screen and (max-width:550px) {
     
     .openNavBtn,
@@ -86,7 +105,24 @@ header{
     .navList li a {
         color: #e0e0e0;
     }
+    .btnSlideInside{
+        color: #fff;
+        border: 2px solid #c94e9eb3;
+        padding: 10px;
+        border-radius: 10px;
+        display: inline-block;
+        cursor: pointer;
+        box-shadow: inset 0 0 0 0 #c94e9eb3;
+        -webkit-transition: ease-out 0.9s;
+        -moz-transition: ease-out 0.9s;
+        transition: ease-out 0.9s;
+    }
+    .btnSlideInside:hover{
+        box-shadow: inset 400px 50px 0 0 #c94e9eb3;
+    }
 }
+
+
 
 /*----------WHATSAPP----------*/
 
@@ -275,12 +311,6 @@ div.desc{
   }
 
 
-
-
-
-
-
-
 /*-----------------FOOTER------------------*/
 /*Footer*/
 footer {
@@ -303,6 +333,78 @@ footer {
     align-content: end;
     color: #e0e0e0;
 }
+
+/* ----------------------CONTACTOS-----------------*/
+
+/*----Titulo--------*/
+
+:root{
+    --ruler:16px;
+    --color--red: #AE1100;
+    --color--bg: #EBECF0;
+    --color-shadow: #BABECC;
+    --color-white: #FFF;
+}
+
+.bodyContactos{
+    background-color: var(--color--bg);
+}
+.divContactos{
+    color: var(--color-shadow);
+    text-shadow: 1px 1px 1px var(--color-white);
+}
+form{
+    padding: var(--ruler);
+    width: var(--ruler)*20;
+    margin: 0 auto;
+}
+.segment{
+    padding: var(--ruler)*2 0;
+    text-align: center;
+}
+
+/*
+.contactTittle{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    background-color: rgb(255, 0, 0);
+    max-width: 1500px;
+    border-radius: 50%;
+}
+.formFormat {
+    border: 1px solid black;
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+  }
+  .formFormat input {
+    width: 90%;
+    height: 30px;
+    margin: 0.5rem;
+  }
+  .formFormat button {
+    padding: 0.5em 1em;
+    border: none;
+    background: rgb(100, 200, 255);
+    cursor: pointer;
+  }
+.formStyle{
+    background-color: white;
+}
+.sexoCt{
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-content: space-between;
+}
+*/
+
 
 /*----------Clases globales-----------*/
 .tittleBackground{
@@ -342,3 +444,9 @@ footer {
         opacity:1
     }
 }
+
+.backgroundGlasses{
+    background-image: url(../Assets/patronImagenes.jpg);
+
+}
+
