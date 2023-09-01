@@ -34,46 +34,51 @@
             </nav>
         </div>
     </header>
-    <main class="bodyContactos">
+    <main>
         <form>
-            <div class="segment">
+            <div class="contactoTittle">
                 <h2>Contacto</h2>
             </div>
-            Nombre: <input type="text" name="nombre">
-            <br><br>
-            Apellido: <input type="text" name="nombre">
-            <br><br>
-            Indique sexo: <br>
-            <div class="sexoCt">
-                Masculino <br>
-                <input type="radio" name="sexo">
-                Femenino <br>
-                <input type="radio" name="sexo">
-                Otro <br> 
-                <input type="radio" name="sexo">
+            <div class="form">
+                <div class="cuadradoForm">
+
+                    Nombre: <input type="text" name="nombre">
+                    <br><br>
+                    Apellido: <input type="text" name="nombre">
+                    <br><br>
+                    Indique sexo: <br>
+                    <div>
+                        <input type="radio" name="sexo"> <br>
+                        Masculino 
+                        <input type="radio" name="sexo"><br>
+                        Femenino 
+                        <input type="radio" name="sexo"><br> 
+                        Otro 
+                    </div>
+                    Indique el motivo de su consulta: <br>
+                    <input type="checkbox" name="disponibilidad"> Disponibilidad de productos <br>
+                    <input type="checkbox" name="precio"> Precio de productos <br>
+                    <input type="checkbox" name="compraPorMayor"> Compras al por mayor <br>
+                    <input type="checkbox" name="Otro"> Otro <br>
+                    En caso de que su respuesta sea otro, aclarar el motivo: <br>
+                    <textarea name="explicacionOtro" cols="25" rows="7"></textarea>
+                    <br>
+                    Seleccione su provincia:
+                    <select name="provincias" class="text">
+                        <option value="BuenosAires"> Buenos aires</option>
+                        <option value="SantaFe">Santa Fe</option>
+                        <option value="Cordoba">Cordoba</option>
+                        <option value="EntreRios">EntreRios</option>
+                        <option value="SanLuis">San Luis</option>
+                        <option value="LaPampa">La Pampa</option>
+                    </select><br><br>
+                    Caracteristica de su numero telefonico: <input type="text" name="caracteristicaTel">
+                    <br><br>
+                    Numero telofonico: <input type="text" name="numeroTelefonico"><br>
+                    <input type="submit" name="enviar" class="text">
+                    <input type="reset" name="cancelado" class="text"><br>
+                </div>
             </div>
-            Indique el motivo de su consulta: <br>
-            <input type="checkbox" name="disponibilidad"> Disponibilidad de productos <br>
-            <input type="checkbox" name="precio"> Precio de productos <br>
-            <input type="checkbox" name="compraPorMayor"> Compras al por mayor <br>
-            <input type="checkbox" name="Otro"> Otro <br>
-            En caso de que su respuesta sea otro, aclarar el motivo: <br>
-            <textarea name="explicacionOtro" cols="25" rows="7"></textarea>
-            <br>
-            Seleccione su provincia:
-            <select name="provincias" class="text">
-                <option value="BuenosAires"> Buenos aires</option>
-                <option value="SantaFe">Santa Fe</option>
-                <option value="Cordoba">Cordoba</option>
-                <option value="EntreRios">EntreRios</option>
-                <option value="SanLuis">San Luis</option>
-                <option value="LaPampa">La Pampa</option>
-            </select><br><br>
-            Caracteristica de su numero telefonico: <input type="text" name="caracteristicaTel">
-            <br><br>
-            Numero telofonico: <input type="text" name="numeroTelefonico"><br>
-            <input type="submit" name="enviar" class="text">
-            <input type="reset" name="cancelado" class="text"><br>
         </form> 
     </main>
 

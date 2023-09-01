@@ -338,73 +338,29 @@ footer {
 
 /*----Titulo--------*/
 
-:root{
-    --ruler:16px;
-    --color--red: #AE1100;
-    --color--bg: #EBECF0;
-    --color-shadow: #BABECC;
-    --color-white: #FFF;
-}
-
-.bodyContactos{
-    background-color: var(--color--bg);
-}
-.divContactos{
-    color: var(--color-shadow);
-    text-shadow: 1px 1px 1px var(--color-white);
-}
-form{
-    padding: var(--ruler);
-    width: var(--ruler)*20;
-    margin: 0 auto;
-}
-.segment{
-    padding: var(--ruler)*2 0;
-    text-align: center;
-}
-
-/*
-.contactTittle{
+.contactoTittle{
     display: flex;
     justify-content: center;
     align-content: center;
-    background-color: rgb(255, 0, 0);
+    width:100%;
     max-width: 1500px;
-    border-radius: 50%;
-}
-.formFormat {
-    border: 1px solid black;
-    width: 100%;
-    max-width: 600px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-    align-items: start;
-  }
-  .formFormat input {
-    width: 90%;
-    height: 30px;
-    margin: 0.5rem;
-  }
-  .formFormat button {
-    padding: 0.5em 1em;
-    border: none;
-    background: rgb(100, 200, 255);
-    cursor: pointer;
-  }
-.formStyle{
     background-color: white;
 }
-.sexoCt{
-    width: 100%;
-    padding: 1rem;
+.form{
     display: flex;
-    justify-content: space-around;
-    align-content: space-between;
-}
-*/
+    justify-content: center;
+    align-items: center;
 
+}
+.cuadradoForm{
+    border: 2px solid black;
+    background-color: rgb(200, 200, 200);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: end;
+    padding: 1rem;
+}
 
 /*----------Clases globales-----------*/
 .tittleBackground{
