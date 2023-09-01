@@ -32,54 +32,115 @@
                     <li><a href="#" class="btnSlideInside">Productos</a></li>
                 </ul>
             </nav>
-        </div>
+        </div>     
     </header>
     <main>
-        <form>
-            <div class="contactoTittle">
-                <h2>Contacto</h2>
-            </div>
-            <div class="form">
-                <div class="cuadradoForm">
-
-                    Nombre: <input type="text" name="nombre">
-                    <br><br>
-                    Apellido: <input type="text" name="nombre">
-                    <br><br>
-                    Indique sexo: <br>
+        <div class="contactStyle">
+            <div>
+                <div class="contactCard">
                     <div>
-                        <input type="radio" name="sexo"> <br>
-                        Masculino 
-                        <input type="radio" name="sexo"><br>
-                        Femenino 
-                        <input type="radio" name="sexo"><br> 
-                        Otro 
+                        <img src="../Assets/opticaLogo.png" alt="" class="contactosImg">
                     </div>
-                    Indique el motivo de su consulta: <br>
-                    <input type="checkbox" name="disponibilidad"> Disponibilidad de productos <br>
-                    <input type="checkbox" name="precio"> Precio de productos <br>
-                    <input type="checkbox" name="compraPorMayor"> Compras al por mayor <br>
-                    <input type="checkbox" name="Otro"> Otro <br>
-                    En caso de que su respuesta sea otro, aclarar el motivo: <br>
-                    <textarea name="explicacionOtro" cols="25" rows="7"></textarea>
-                    <br>
-                    Seleccione su provincia:
-                    <select name="provincias" class="text">
-                        <option value="BuenosAires"> Buenos aires</option>
-                        <option value="SantaFe">Santa Fe</option>
-                        <option value="Cordoba">Cordoba</option>
-                        <option value="EntreRios">EntreRios</option>
-                        <option value="SanLuis">San Luis</option>
-                        <option value="LaPampa">La Pampa</option>
-                    </select><br><br>
-                    Caracteristica de su numero telefonico: <input type="text" name="caracteristicaTel">
-                    <br><br>
-                    Numero telofonico: <input type="text" name="numeroTelefonico"><br>
-                    <input type="submit" name="enviar" class="text">
-                    <input type="reset" name="cancelado" class="text"><br>
+                    <div>
+                        <div class="contactoTittle">
+                            <h2>Contacto</h2>
+                        </div>
+                        <form>
+                            <div class="form">
+                                <div class="cuadradoForm">
+                                    <div class="datosPersonales">
+                                        <div class="nombre">
+                                            <label for="Nombre"> Nombre:</label>
+                                            <input type="text" name="nombre" class="input">
+                                        </div>
+                                        <div class="apellido">
+                                            <label for="Apellido">Apellido:</label>
+                                            <input type="text" name="nombre" class="input">
+                                        </div>
+                                    </div>
+                                    <br>
+                                    <h1 class="formTittle">Indique sexo:</h1>
+                                    <div class="sexoDisplay">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                                            <label class="form-check-label" for="flexRadioDefault1">
+                                              Hombre
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Mujer
+                                            </label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                                            <label class="form-check-label" for="flexRadioDefault2">
+                                                Otro
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="checkboxDisplay">
+                                        <h1 class="formTittle">Indique el motivo de su consulta:</h1>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">
+                                            <label class="form-check-label" for="flexCheckDefault">
+                                                Disponibilidad de productos
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Precio de productos 
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Compras al por mayor 
+                                            </label>
+                                          </div>
+                                          <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" value="" id="flexCheckChecked" checked>
+                                            <label class="form-check-label" for="flexCheckChecked">
+                                                Otro 
+                                            </label>
+                                          </div>
+                                    </div>
+                                    <br>
+                                    <div class="selectorDisplay">
+                                        <h1 class="formTittle">Seleccione su provincia:</h1>
+                                        <select name="provincias" class="text">
+                                            <option value="BuenosAires"> Buenos aires</option>
+                                            <option value="SantaFe">Santa Fe</option>
+                                            <option value="Cordoba">Cordoba</option>
+                                            <option value="EntreRios">EntreRios</option>
+                                            <option value="SanLuis">San Luis</option>
+                                            <option value="LaPampa">La Pampa</option>
+                                        </select>
+                                    </div>
+                                    <br>
+                                    <div class="numeroTelSyle">
+                                        <div class="caracTel">
+                                            <label for="caracTel"> Caracteristica </label>
+                                            <input type="text" name="caracteristicaTel" class="input blockedTelInput" value="+54" disabled>
+                                        </div>
+                                        <div class="numeroTel">
+                                            <label for="numeroTel">Numero telefonico</label>
+                                            <input type="text" name="numeroTelefonico" class="input" placeholder="Telefono"><br>
+                                        </div>
+                                    </div>
+                                    <div class="formBtn">
+                                        <input type="submit" name="enviar" class="btnForm">
+                                        <input type="reset" name="cancelado" class="btnForm">
+                                    </div>
+                                </div>
+                            </div>
+                        </form> 
+                    </div>
                 </div>
             </div>
-        </form> 
+        </div>
     </main>
 
     <!--Link boostrap y jv-->
