@@ -155,13 +155,15 @@ header{
 .carrouselTittle{
     color: #e0e0e0;
 }
-.carrouselSize{
-    width: 100%;
-    height: 50%;
-
-}
 .carrouselImg{
     filter: brightness(50%);
+}
+.carousel slide{
+    width: 100%;
+    height: 50px;
+}
+.carrouselSize{
+    height: 50%;
 }
 
 /*------------CARDS GALERIA------------*/
@@ -228,8 +230,12 @@ div.desc{
 }
 .productoImg{
     display: block;
+    width: 100%;
+    height: 100%;
+    /*
     width: 600px;
     height: 400px;
+    */
 }
 /* Hover overlay en las imagenes de la galeria*/
 .container{
@@ -359,14 +365,17 @@ footer {
     display: flex;
     justify-content: center;
     align-content: center;
+    color:#696b75;
     width:100%;
     max-width: 1000px;
-    background-color: #EBECF0;
+    text-shadow: 1px 1px 1px #FFF;
+    background-color: #f3f3f3;
 }
 /*--------------Estilo imagen--------*/
 .contactosImg{
     width: 100%;
     max-width: 1500px;
+    border-radius: 50%;
 }
 /*-------------Estilo form----------*/
 .form{
@@ -388,19 +397,21 @@ footer {
 }
 .datosPersonales{
     display: flex;
-    
+    flex-wrap: wrap;
 }
 label{
     color:#696b75;
     text-shadow: 1px 1px 1px #FFF;
 }
 .input{
+    width: 10rem;
     border: transparent;
     box-sizing: border-box;
     border-radius: 20px;
     box-shadow: inset 2px 2px 2px #BABECC, inset -2px -2px 2px  #FFF;
     text-shadow: 1px 1px 0 white;
     text-align: center;
+    outline: none;
 }
 .sexoDisplay{
     display: flex;
@@ -431,7 +442,6 @@ select{
 }
 .blockedTelInput{
     text-align: center;
-    padding: 5px
 }
 .numeroTel{
     text-align: center;
@@ -475,11 +485,33 @@ select{
     .contactCard{
         flex-direction: column;
     }
+    .datosPersonales{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .sexoDisplay{
+        padding: 1rem;
+    }
+    .checkboxDisplay{
+        padding: 2rem;
+    }
+    .selectorDisplay{
+        flex-direction: column;
+        width: 100%;
+        padding: 2rem;
+        text-align: center;
+    }
+    .numeroTelSyle{
+        flex-direction: column;
+        justify-content: center;
+    }
 }
 
 
 
 /*-------------------------------------------------QUIENES SOMOS?-------------------------------------------*/
+
+
 .section{
     display: flex;
     justify-content: center;
@@ -562,7 +594,18 @@ select{
     transform: translateX(0);
 }
 
-
+@media screen and (max-width:550px){
+    .section{
+        min-height: 80vh;
+    }
+    .h1{
+        font-size: 50px;
+    }
+    .p{
+        font-size: 20px;
+        text-align: center;
+    }
+}
 
 
 
